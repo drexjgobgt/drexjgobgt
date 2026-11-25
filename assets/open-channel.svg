@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="168" viewBox="0 0 840 168" role="img">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#160A08"/>
+      <stop offset="55%" stop-color="#0D0605"/>
+      <stop offset="100%" stop-color="#1A0B08"/>
+    </linearGradient>
+    <radialGradient id="emberGlow" cx="78%" cy="22%" r="60%">
+      <stop offset="0%" stop-color="#EB7827" stop-opacity="0.22"/>
+      <stop offset="45%" stop-color="#A13E24" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#0D0605" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A13E24" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#4B231D" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#EB7827" stop-opacity="0.55"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="gridPattern" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#4B231D" stroke-width="0.6" stroke-opacity="0.26"/>
+    </pattern>
+    
+    <linearGradient id="radarCone" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F8E543" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#EB7827" stop-opacity="0"/>
+    </linearGradient>
+    
+  </defs>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(0.85); }
+    }
+    @keyframes shimmer {
+      0%, 100% { opacity: 0.9; }
+      50% { opacity: 0.55; }
+    }
+    
+    @keyframes radarSweep {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .radar-arm { transform-origin: 720px 84px; animation: radarSweep 9s linear infinite; }
+    
+  </style>
+  <rect x="1" y="1" width="838" height="166" rx="18" fill="url(#cardBg)" stroke="url(#borderGrad)" stroke-width="1.4"/>
+  <rect x="2" y="2" width="836" height="164" rx="17" fill="url(#gridPattern)" opacity="0.75"/>
+  <rect x="2" y="2" width="836" height="164" rx="17" fill="url(#emberGlow)"/>
+  
+  <text x="38" y="34" class="mono" font-size="10" letter-spacing="1.8" fill="#EDA330">OPEN CHANNEL // SIGNAL ACTIVE</text>
+  <text x="38" y="64" class="sans" font-size="24" font-weight="800" fill="#FFF7ED">Build the next chapter</text>
+  <text x="38" y="88" class="sans" font-size="13" fill="#E7C8B5">Open to collaborations, systems tooling, web apps, and creative engineering.</text>
+  <g transform="translate(38, 110)"><rect width="102.8" height="28" rx="14" fill="#210E0B" stroke="#6C312B" stroke-width="1"/><circle cx="13" cy="14" r="3" fill="#F8E543"/><text x="22" y="17.5" class="mono" font-size="10.5" fill="#FFF7ED">@drexjgobgt</text></g><g transform="translate(150, 110)"><rect width="157.2" height="28" rx="14" fill="#210E0B" stroke="#6C312B" stroke-width="1"/><circle cx="13" cy="14" r="3" fill="#EB7827"/><text x="22" y="17.5" class="mono" font-size="10.5" fill="#FFF7ED">discord.gg/drexxsss</text></g><g transform="translate(317, 110)"><rect width="184.4" height="28" rx="14" fill="#210E0B" stroke="#6C312B" stroke-width="1"/><circle cx="13" cy="14" r="3" fill="#EDA330"/><text x="22" y="17.5" class="mono" font-size="10.5" fill="#FFF7ED">rafifsyandana@proton.me</text></g>
+
+  <!-- Right Concentric Ember Radar -->
+  <circle cx="720" cy="84" r="62" fill="#1B0908" stroke="#4B231D" stroke-width="1"/>
+  <circle cx="720" cy="84" r="46" fill="none" stroke="#6C312B" stroke-width="1" stroke-dasharray="4 4"/>
+  <circle cx="720" cy="84" r="28" fill="none" stroke="#A13E24" stroke-width="1"/>
+  <line x1="652" y1="84" x2="788" y2="84" stroke="#4B231D" stroke-width="0.8"/>
+  <line x1="720" y1="16" x2="720" y2="152" stroke="#4B231D" stroke-width="0.8"/>
+  <g class="radar-arm">
+    <path d="M 720 84 L 774 52 A 62 62 0 0 1 782 84 Z" fill="url(#radarCone)"/>
+    <line x1="720" y1="84" x2="782" y2="84" stroke="#F8E543" stroke-width="1.6"/>
+  </g>
+  <circle cx="720" cy="84" r="6" fill="#FDFE75" filter="url(#softGlow)"/>
+
+</svg>

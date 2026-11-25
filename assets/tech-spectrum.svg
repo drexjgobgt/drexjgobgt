@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="255" viewBox="0 0 840 255" role="img">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#160A08"/>
+      <stop offset="55%" stop-color="#0D0605"/>
+      <stop offset="100%" stop-color="#1A0B08"/>
+    </linearGradient>
+    <radialGradient id="emberGlow" cx="78%" cy="22%" r="60%">
+      <stop offset="0%" stop-color="#EB7827" stop-opacity="0.22"/>
+      <stop offset="45%" stop-color="#A13E24" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#0D0605" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A13E24" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#4B231D" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#EB7827" stop-opacity="0.55"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="gridPattern" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#4B231D" stroke-width="0.6" stroke-opacity="0.26"/>
+    </pattern>
+    
+  </defs>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(0.85); }
+    }
+    @keyframes shimmer {
+      0%, 100% { opacity: 0.9; }
+      50% { opacity: 0.55; }
+    }
+    
+    @keyframes blinkCursor {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    .cursor-blink { animation: blinkCursor 1.1s infinite; }
+    
+  </style>
+  <rect x="1" y="1" width="838" height="253" rx="18" fill="url(#cardBg)" stroke="url(#borderGrad)" stroke-width="1.4"/>
+  <rect x="2" y="2" width="836" height="251" rx="17" fill="url(#gridPattern)" opacity="0.75"/>
+  <rect x="2" y="2" width="836" height="251" rx="17" fill="url(#emberGlow)"/>
+  
+  <text x="38" y="30" class="mono" font-size="10" letter-spacing="1.8" fill="#EDA330">TECHNOLOGY SPECTRUM</text>
+  <text x="38" y="51" class="sans" font-size="19" font-weight="800" fill="#FFF7ED">Language Stack</text>
+  <text x="790" y="47" text-anchor="end" class="mono" font-size="12" fill="#E7C8B5">&gt; stack.scan</text>
+  <rect x="794" y="36" width="7" height="13" fill="#F8E543" class="cursor-blink"/>
+
+  <!-- Stacked Spectrum Bar -->
+  <rect x="38" y="68" width="764" height="10" rx="5" fill="#210E0B"/>
+  <rect x="38.0" y="68" width="269.3" height="10" rx="3" fill="#F8E543"/><rect x="309.3" y="68" width="230.7" height="10" rx="3" fill="#EB7827"/><rect x="542.0" y="68" width="97.6" height="10" rx="3" fill="#EDA330"/><rect x="641.7" y="68" width="96.5" height="10" rx="3" fill="#C65428"/><rect x="740.2" y="68" width="35.7" height="10" rx="3" fill="#E88B5A"/><rect x="777.9" y="68" width="22.1" height="10" rx="3" fill="#A13E24"/>
+
+  <!-- 2x3 Language Tiles -->
+  <g transform="translate(38, 98)"><rect width="372" height="38" rx="9" fill="#210E0B" stroke="#4B231D" stroke-width="0.9"/><circle cx="16" cy="14" r="4.2" fill="#F8E543"/><text x="28" y="18" class="sans" font-size="13" font-weight="700" fill="#FFF7ED">JavaScript</text><text x="358" y="18" text-anchor="end" class="mono" font-size="11.5" font-weight="700" fill="#F8E543">34.0%</text><rect x="14" y="27" width="344" height="4" rx="2" fill="#2E1410"/><rect x="14" y="27" width="116.6" height="4" rx="2" fill="#F8E543"/></g><g transform="translate(430, 98)"><rect width="372" height="38" rx="9" fill="#210E0B" stroke="#4B231D" stroke-width="0.9"/><circle cx="16" cy="14" r="4.2" fill="#EB7827"/><text x="28" y="18" class="sans" font-size="13" font-weight="700" fill="#FFF7ED">Python</text><text x="358" y="18" text-anchor="end" class="mono" font-size="11.5" font-weight="700" fill="#EB7827">29.1%</text><rect x="14" y="27" width="344" height="4" rx="2" fill="#2E1410"/><rect x="14" y="27" width="100.0" height="4" rx="2" fill="#EB7827"/></g><g transform="translate(38, 144)"><rect width="372" height="38" rx="9" fill="#210E0B" stroke="#4B231D" stroke-width="0.9"/><circle cx="16" cy="14" r="4.2" fill="#EDA330"/><text x="28" y="18" class="sans" font-size="13" font-weight="700" fill="#FFF7ED">TypeScript</text><text x="358" y="18" text-anchor="end" class="mono" font-size="11.5" font-weight="700" fill="#EDA330">12.5%</text><rect x="14" y="27" width="344" height="4" rx="2" fill="#2E1410"/><rect x="14" y="27" width="42.8" height="4" rx="2" fill="#EDA330"/></g><g transform="translate(430, 144)"><rect width="372" height="38" rx="9" fill="#210E0B" stroke="#4B231D" stroke-width="0.9"/><circle cx="16" cy="14" r="4.2" fill="#C65428"/><text x="28" y="18" class="sans" font-size="13" font-weight="700" fill="#FFF7ED">Rust</text><text x="358" y="18" text-anchor="end" class="mono" font-size="11.5" font-weight="700" fill="#C65428">12.3%</text><rect x="14" y="27" width="344" height="4" rx="2" fill="#2E1410"/><rect x="14" y="27" width="42.3" height="4" rx="2" fill="#C65428"/></g><g transform="translate(38, 190)"><rect width="372" height="38" rx="9" fill="#210E0B" stroke="#4B231D" stroke-width="0.9"/><circle cx="16" cy="14" r="4.2" fill="#E88B5A"/><text x="28" y="18" class="sans" font-size="13" font-weight="700" fill="#FFF7ED">PHP</text><text x="358" y="18" text-anchor="end" class="mono" font-size="11.5" font-weight="700" fill="#E88B5A">4.7%</text><rect x="14" y="27" width="344" height="4" rx="2" fill="#2E1410"/><rect x="14" y="27" width="16.2" height="4" rx="2" fill="#E88B5A"/></g><g transform="translate(430, 190)"><rect width="372" height="38" rx="9" fill="#210E0B" stroke="#4B231D" stroke-width="0.9"/><circle cx="16" cy="14" r="4.2" fill="#A13E24"/><text x="28" y="18" class="sans" font-size="13" font-weight="700" fill="#FFF7ED">CSS</text><text x="358" y="18" text-anchor="end" class="mono" font-size="11.5" font-weight="700" fill="#A13E24">3.0%</text><rect x="14" y="27" width="344" height="4" rx="2" fill="#2E1410"/><rect x="14" y="27" width="13.2" height="4" rx="2" fill="#A13E24"/></g>
+
+</svg>
