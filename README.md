@@ -40,7 +40,7 @@
 
 | Followers | Repositories | Stars | Contributions | Active Days | Longest Streak |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| **4** | **15** | **4** | **122** | **35** | **3d** |
+| **4** | **15** | **4** | **124** | **36** | **3d** |
 
 </div>
 <!-- STATS:END -->
@@ -111,7 +111,7 @@
 <!-- PROJECTS:START -->
 | [KAGE](https://github.com/drexjgobgt/KAGE) | [NusaPulse](https://github.com/drexjgobgt/NusaPulse) | [shortsgenerator](https://github.com/drexjgobgt/shortsgenerator) | [mini_crm](https://github.com/drexjgobgt/mini_crm) |
 | :--- | :--- | :--- | :--- |
-| Lightweight instant replay & direct MP4 capture studio for Windows.<br><br>`Rust` · ★ 0 · 22h ago | Indonesian food prices, weather, and anomaly analytics console.<br><br>`Python` · ★ 0 · 21d ago | Automated local Python pipeline for generating YouTube Shorts.<br><br>`Python` · ★ 1 · 29d ago | Web-based daily CRM built for Indonesian UMKM businesses.<br><br>`JavaScript` · ★ 1 · 1mo ago |
+| Lightweight instant replay & direct MP4 capture studio for Windows.<br><br>`Rust` · ★ 0 · 1d ago | Indonesian food prices, weather, and anomaly analytics console.<br><br>`Python` · ★ 0 · 22d ago | Automated local Python pipeline for generating YouTube Shorts.<br><br>`Python` · ★ 1 · 1mo ago | Web-based daily CRM built for Indonesian UMKM businesses.<br><br>`JavaScript` · ★ 1 · 1mo ago |
 <!-- PROJECTS:END -->
 
 <div align="center">
